@@ -329,5 +329,17 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
     }
 
+    @Test
+    public void boundaryValueDecVolume1() {
+        Radio radio = new Radio();
+
+        radio.setCurrentVolume(55);
+        radio.decreaseVolume();
+
+        int expected = 54;
+        int actual = radio.getCurrentVolume();
+        Assertions.assertEquals(expected, actual);
+    }
+
 
 }
