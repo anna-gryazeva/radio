@@ -7,7 +7,7 @@ public class RadioTest {
 
     @Test
     public void stationNumberConst() {
-        Radio radio = new Radio(15);
+        Radio radio = new Radio(14);
 
         radio.setCurrentStation(12);
 
