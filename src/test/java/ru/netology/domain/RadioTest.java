@@ -5,6 +5,23 @@ import org.junit.jupiter.api.Test;
 
 public class RadioTest {
 
+    @Test
+    public void stationNumberConst() {
+        Radio radio = new Radio(15);
+
+        radio.setCurrentStation(12);
+
+        Assertions.assertEquals(12, radio.getCurrentStation());
+
+    }
+
+    @Test
+    public void negativeStationNumberConst() {
+        Radio radio = new Radio(-5);
+
+        Assertions.assertEquals(0, radio.getCurrentStation());
+    }
+
 
     @Test
     public void choiceStation() {
